@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src * self blob: data: gap:; style-src * self 'unsafe-inline' blob: data: gap:; script-src * 'self' 'unsafe-eval' 'unsafe-inline' blob: data: gap:; object-src * 'self' blob: data: gap:; img-src * self 'unsafe-inline' blob: data: gap:; connect-src self * 'unsafe-inline' blob: data: gap:; frame-src * self blob: data: gap:;">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracker</title>
+    <link rel="stylesheet" href="../css/premium.css">
+    <link rel="stylesheet" href="../css/general.css">
+</head>
+<body>
+    <form id="tracker-form">
+        <label for="amount">Amount:</label>
+        <input type="text" class="entry-field" id="amount" required>
+        <label for="description">Description:</label>
+        <input type="text" class="entry-field" id="description" required>
+        <label for="category">Category:</label>
+        <select id="category">
+          <option value="food">Food</option>
+          <option value="fuel">Fuel</option>
+          <option value="movie">Movie</option>
+          <option value="rent">Rent</option>
+          <option value="others">Others</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+    <!-- <div>
+        <a href="login.html">Existing User? Click Here.</a>
+    </div> -->
+    <div id="expense-list">
+        <ul id="expense-items">
+            
+        </ul>
+        <div class="pagination">
+
+        </div>
+        <div id="rows-per-page">
+            <form id="rows-form">
+                <label for="row-selector">No. of expenses per page:</label>
+                <select id="row-selector">
+                    <option selected disabled hidden>Choose here</option>
+                    <option>5</option>
+                    <option>10</option>
+                    <option>20</option>
+                    <option>50</option>
+                </select>
+            </form>
+        </div>
+    </div>
+    <div id="error">
+        <h3 id="error-text"></h3>
+    </div>
+    <div style="float: right;" id="premium-div">
+        <button id="rzp-button1">Go Premium</button>
+        <button onclick="download()" id="downloadexpense" style="display: none;">Download File</button>
+    </div>
+    <div style="display: none;" id="leaderboard-div">
+        <h2>Leaderboard</h2>
+        <ul id="leaderboard">
+
+            
+        </ul>
+    </div>
+    <div  style="display: none;" id="prevDownloads-div">
+        <h2>Downloads</h2>
+        <ul id="downloads">
+
+            
+        </ul>
+    </div>
+    <div id="expansion">
+        <div id="expansion-header">
+            <h3>Expense Details</h3>
+            <button id="close-list-btn">X</button>
+
+        </div>
+        <ul class="expense-items">
+            
+        </ul>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.2/axios.min.js"></script>
+<script src="tracker.js"></script>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</html>

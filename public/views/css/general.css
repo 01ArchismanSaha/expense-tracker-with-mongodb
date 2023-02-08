@@ -1,0 +1,17 @@
+#rows-per-page, .pagination{
+    text-align: center;
+}
+
+.pagination button:hover{
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+}
+
+.pagination button.active{
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}

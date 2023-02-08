@@ -1,0 +1,38 @@
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+#expansion {
+    
+    width: 25rem;
+    height: 30rem;
+    /* top: 8%; */
+    position: fixed;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.203);
+    border: 1px solid rgb(212, 255, 0);
+    left: 0;
+    visibility: hidden;
+}
+
+#expansion.active {
+    visibility: visible;
+}
+
+#close-list-btn {
+    float: right;
+    padding: 0.5rem;
+}
+#expansion-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+body {
+    position: relative;
+}
+
+#prevDownloads-div {
+    position: fixed;
+    bottom: 0%;
+}

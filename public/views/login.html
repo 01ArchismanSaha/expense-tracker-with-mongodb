@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src * self blob: data: gap:; style-src * self 'unsafe-inline' blob: data: gap:; script-src * 'self' 'unsafe-eval' 'unsafe-inline' blob: data: gap:; object-src * 'self' blob: data: gap:; img-src * self 'unsafe-inline' blob: data: gap:; connect-src self * 'unsafe-inline' blob: data: gap:; frame-src * self blob: data: gap:;">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <form id="log-in-form">
+        <!-- <label for="name">Name:</label>
+        <input type="text" class="entry-field" id="name" required> -->
+        <label for="eamil">Email:</label>
+        <input type="text" class="entry-field" id="email" required>
+        <label for="password">Password:</label>
+        <input type="text" class="entry-field" id="password" required>
+        <button type="submit">Login</button>
+    </form>
+    <div>
+        <button type="button" id="fgt-btn">Forgot Password</button>
+    </div>
+    <div>
+        <a href="signup.html">New User? Click Here.</a>
+    </div>
+    <div id="error">
+        <h3 id="error-text"></h3>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.2/axios.min.js"></script>
+<script src="login.js"></script>
+</html>
