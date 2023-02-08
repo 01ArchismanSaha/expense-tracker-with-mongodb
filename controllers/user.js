@@ -166,6 +166,7 @@ exports.checkMembership = (req, res) => {
     }
 };
 
+
 // exports.getExpansion = (req, res) => {
 //     if(req.user.isPremiumUser) {
 //         const id = req.params.id;
